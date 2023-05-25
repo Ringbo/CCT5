@@ -23,8 +23,14 @@ bash scripts/setup.sh
 
 
 ## Download and preprocess
-1. Download the dataset and models from [here(Comming soon)](https://TODO) and uncompress it in the root of CCT5.
-2. `bash scripts/prepare_dataset.sh`
+1. Download the dataset and models:
+```bash
+bash scripts/download.sh
+```
+2. Prepare the dataset for pre-training[optional]
+```bash
+scripts/prepare_dataset.sh
+```
 
 ## Pretrain the model[optional]
 ```bash
