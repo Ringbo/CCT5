@@ -47,7 +47,7 @@ If the evaluation during fine-tuning takes too long, you can adjust the "--evalu
 To evaluate the performance of a specific checkpoint, add the flag "-e" followed by the checkpoint path: 
 
 ```bash
-bash scripts/finetune_msggen.sh -g [GPU_ID] -l [cpp/csharp/java/javascript/python] -e [path_to_model].
+bash scripts/finetune_msggen.sh -g [GPU_ID] -l [cpp/csharp/java/javascript/python] -e [path_to_model]
 ```
 Note that if [path_to_model] is blank, this script will automatically evaluate our released checkpoint.
 
@@ -62,7 +62,25 @@ Additionally, we have released the the output result of CCT5 and baselines, whic
 bash scripts/eval_cup_res.sh --filepath [path_to_result_file]
 ```
 # Task 3: Just-in-Time Defect Prediction
-Comming soon
+### Only semantic features: 
+Fine-tune:
+```bash
+bash scripts/finetune_jitdp_SF.sh -g [GPU_ID]
+```
+Evaluate:
+```bash
+bash scripts/finetune_jitdp_SF.sh -g [GPU_ID] -e [path_to_model]
+```
+### Semantic features + expert features: 
+
+Fine-tune:
+```bash
+bash scripts/finetune_jitdp_SF_EF.sh -g [GPU_ID]
+```
+Evaluate:
+```bash
+bash scripts/finetune_jitdp_SF_EF.sh -g [GPU_ID] -e [path_to_model]
+```
 
 # Task 4: Code Change Quality Estimation
 
@@ -72,7 +90,7 @@ bash scripts/finetune_QE.sh -g [GPU_ID]
 ```
 Evaluate:
 ```bash
-bash scripts/finetune_QE.sh -g [GPU_ID] -e [path_to_model].
+bash scripts/finetune_QE.sh -g [GPU_ID] -e [path_to_model]
 ```
 
 # Task 5: Review Generation
@@ -82,7 +100,7 @@ bash scripts/finetune_CodeReview.sh -g [GPU_ID]
 ```
 Evaluate:
 ```bash
-bash scripts/finetune_CodeReview.sh -g [GPU_ID] -e [path_to_model].
+bash scripts/finetune_CodeReview.sh -g [GPU_ID] -e [path_to_model]
 ```
 
 We reused some code from open-source repositories. We would like to extend our gratitude to the following repositories:
