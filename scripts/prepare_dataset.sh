@@ -20,7 +20,7 @@ then
 else
     echo "lrzip is already installed." 
 fi
-
+rm -rf Dataset/pre-training/CodeChangeNet.jsonl
 echo "Decompressing dataset..."
 lrzuntar Dataset/pre-training/CodeChangeNet.jsonl.tar.lrz
 mv CodeChangeNet.jsonl Dataset/pre-training/
