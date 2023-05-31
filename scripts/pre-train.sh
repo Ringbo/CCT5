@@ -26,10 +26,7 @@ done
 function pretrain() {
     SCRIPT_PATH="src/pre_training/pretrain.py"
     python $SCRIPT_PATH \
-        --task pretraining \
-        --sub_task none \
         --model_type codet5_CC \
-        --data_num -1 \
         --warmup_steps 500 \
         --learning_rate 3e-4 \
         --num_train_epochs 30 \
