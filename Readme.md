@@ -39,7 +39,7 @@ bash scripts/pre-train.sh -g [GPU_ID]
 
 ## Task 1: Commit Message Generation
 ```bash
-bash scripts/finetune_msggen.sh -g [GPU_ID] -l [cpp/csharp/java/javascript/python]
+bash scripts/finetune_msggen.sh -g [GPU_ID] -l [cpp/csharp/java/javascript/python/fira]
 ```
 The released checkpoint may performs better than stated in the paper.
 If the evaluation during fine-tuning takes too long, you can adjust the "--evaluate_sample_size" parameter. This parameter refers to the number of cases in the validation set during evaluation.
@@ -47,7 +47,7 @@ If the evaluation during fine-tuning takes too long, you can adjust the "--evalu
 To evaluate the performance of a specific checkpoint, add the flag "-e" followed by the checkpoint path: 
 
 ```bash
-bash scripts/finetune_msggen.sh -g [GPU_ID] -l [cpp/csharp/java/javascript/python] -e [path_to_model]
+bash scripts/finetune_msggen.sh -g [GPU_ID] -l [cpp/csharp/java/javascript/python/fira] -e [path_to_model]
 ```
 Note that if [path_to_model] is blank, this script will automatically evaluate our released checkpoint.
 

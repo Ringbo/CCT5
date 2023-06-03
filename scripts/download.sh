@@ -34,3 +34,5 @@ else
     exit 1
 fi
 tar -axf CCT5.tar.bz2
+wget https://www.zenodo.org/record/7998509/files/CCT5-v1-patch.tar.bz2
+tar -axf CCT5-v1-patch.tar.bz2
