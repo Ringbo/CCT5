@@ -107,3 +107,13 @@ We reused some code from open-source repositories. We would like to extend our g
 1. [CodeT5](https://github.com/salesforce/CodeT5)
 2. [CodeBERT](https://github.com/microsoft/CodeBERT)
 2. [NatGen](https://github.com/saikat107/NatGen)
+
+## Citation
+```
+@inproceedings{lin2023cct5,
+  title={CCT5: A Code-Change-Oriented Pre-Trained Model},
+  author={Lin, Bo and Wang, Shangwen and Liu, Zhongxin and Liu, Yepang and Xia, Xin and Mao, Xiaoguang},
+  booktitle={Proceedings of the 31th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+  year={2023}
+}
+```
