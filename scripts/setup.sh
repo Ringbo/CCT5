@@ -2,7 +2,7 @@
 
 function setup_repo() {
     cd myParser;
-    bash myParser/build.sh;
+    bash build.sh;
     cd ../
 }
 
@@ -17,8 +17,8 @@ function install_deps() {
     conda install transformers==4.21.1 -c conda-forge
     conda install tensorboard==2.12.2 -c conda-forge
     pip install tree-sitter==0.19.1;
-    pip install nltk=3.8.1;
-    pip install scipy=1.10.1;
+    pip install nltk==3.8.1;
+    pip install scipy==1.10.1;
 }
 
 create_and_activate;
