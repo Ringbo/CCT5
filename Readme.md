@@ -51,7 +51,7 @@ bash scripts/finetune_msggen.sh -g [GPU_ID] -l [cpp/csharp/java/javascript/pytho
 ```
 Note that if [path_to_model] is blank, this script will automatically evaluate our released checkpoint.
 
-# Task 2: Just-in-Time Comment Update
+## Task 2: Just-in-Time Comment Update
 ```bash
 bash scripts/finetune_cup.sh -g [GPU_ID]
 ```
@@ -61,7 +61,7 @@ Additionally, we have released the the output result of CCT5 and baselines, whic
 ```
 bash scripts/eval_cup_res.sh --filepath [path_to_result_file]
 ```
-# Task 3: Just-in-Time Defect Prediction
+## Task 3: Just-in-Time Defect Prediction
 ### Only semantic features: 
 Fine-tune:
 ```bash
@@ -82,7 +82,7 @@ Evaluate:
 bash scripts/finetune_jitdp_SF_EF.sh -g [GPU_ID] -e [path_to_model]
 ```
 
-# Task 4: Code Change Quality Estimation
+## Task 4: Code Change Quality Estimation
 
 Fine-tune:
 ```bash
@@ -93,7 +93,7 @@ Evaluate:
 bash scripts/finetune_QE.sh -g [GPU_ID] -e [path_to_model]
 ```
 
-# Task 5: Review Generation
+## Task 5: Review Generation
 Fine-tune:
 ```bash
 bash scripts/finetune_CodeReview.sh -g [GPU_ID]
@@ -103,10 +103,14 @@ Evaluate:
 bash scripts/finetune_CodeReview.sh -g [GPU_ID] -e [path_to_model]
 ```
 
+## Credit
 We reused some code from open-source repositories. We would like to extend our gratitude to the following repositories:
 1. [CodeT5](https://github.com/salesforce/CodeT5)
 2. [CodeBERT](https://github.com/microsoft/CodeBERT)
 2. [NatGen](https://github.com/saikat107/NatGen)
+
+We note that [a recent work](https://arxiv.org/pdf/2208.08100.pdf) also focuses on pre-trained models for code change. Since these works are conducted at similar time, we missed to discuss this paper in our Related Work part. We are sorry for that and we hope readers could also pay attention to this paper. 
+
 
 ## Citation
 ```
