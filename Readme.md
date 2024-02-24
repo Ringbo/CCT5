@@ -1,5 +1,5 @@
 # CCT5: A Code-Change-Oriented Pre-Trained Model
-
+We note that [a recent work](https://arxiv.org/pdf/2208.08100.pdf) from NTU also focuses on pre-trained models for code change. Since these works are conducted at similar time, we missed to discuss this paper in our Related Work part. We are sorry for that and we hope readers could also pay attention to this paper. 
 ## Getting Started
 
 
@@ -108,8 +108,6 @@ We reused some code from open-source repositories. We would like to extend our g
 1. [CodeT5](https://github.com/salesforce/CodeT5)
 2. [CodeBERT](https://github.com/microsoft/CodeBERT)
 2. [NatGen](https://github.com/saikat107/NatGen)
-
-We note that [a recent work](https://arxiv.org/pdf/2208.08100.pdf) also focuses on pre-trained models for code change. Since these works are conducted at similar time, we missed to discuss this paper in our Related Work part. We are sorry for that and we hope readers could also pay attention to this paper. 
 
 
 ## Citation
